@@ -1,13 +1,115 @@
-<nz-layout class="layout">
-  <nz-layout>
-    <div class="header-banner" nz-row>
-      <div nz-col nzSpan="24">Back to School</div>
+<div nz-row>
+  <div class="header-banner" nz-col nzSpan="24">
+    Shop for school
+  </div>
+</div>
+<nz-layout>
+  <nz-header>
+    <div class="logo">
+      Sana Design
     </div>
-    <nz-header>
-    </nz-header>
-    <nz-content>
-      <div class="inner-content">Content</div>
-    </nz-content>
-    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
-  </nz-layout>
+    <div class="search">
+      <div style="display: inline-flex;
+    grid-gap: 20px;">
+        <nz-input-group [nzSuffix]="suffixIconSearch">
+          <input nz-input placeholder="Search" />
+        </nz-input-group>
+        <ng-template #suffixIconSearch>
+          <span nz-icon nzType="search"></span>
+        </ng-template>
+        <span style="padding: 8px;" nz-icon nzType="shopping-cart" nzTheme="outline"></span>
+      </div>
+
+    </div>
+    <ul nz-menu nzMode="horizontal" class="header-menu">
+      <li nz-menu-item nzSelected>Sale</li>
+      <li nz-menu-item>Packs & Bags</li>
+      <li nz-menu-item>Men's</li>
+      <li nz-menu-item>Women's</li>
+      <li nz-menu-item>Accessories</li>
+      <li nz-menu-item>The New Outdoor<sup>TM</sup></li>
+    </ul>
+
+  </nz-header>
+  <nz-content>
+    <!-- <nz-breadcrumb>
+      <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+      <nz-breadcrumb-item>List</nz-breadcrumb-item>
+      <nz-breadcrumb-item>App</nz-breadcrumb-item>
+    </nz-breadcrumb> -->
+    <div class="inner-content">
+      <div nz-row>
+        <div nz-col nzSpan="24">
+          <div class="shop-card-wrapper">
+            <div class="shop-card-container">
+              <h1>WANT A FREE
+                ROVER PACK
+                CLASSIC?</h1>
+              <button nz-button nzType="primary" nzSize="large">Reedem Points</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div nz-row style="margin-top: 50px;">
+        <div nz-col nzSpan="12">
+          <div class="section-two-card-wrapper">
+            <div class="section-two-card-leftcontainer">
+              <div class="section-two-card-leftcontent">
+                <h1>STUDENTS GET 35% OFF</h1>
+                <p style="line-height: 1.5rem;
+    font-size: 1rem;">Learn more about out
+                  student discount program.</p>
+                <button nz-button nzType="primary" nzSize="large">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="12">
+          <div class="section-two-card-wrapper">
+            <div class="section-two-card-rightcontainer">
+              <div class="section-two-card-rightcontent">
+                <h1>20% OFF BAG & APPAREL KITS</h1>
+                <button nz-button nzType="primary" nzSize="large">Shop Kits</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div nz-row style="margin-top: 50px;">
+        <div nz-col nzSpan="24">
+          <div class="section-third-card-wrapper">
+            <i (click)="arrowButton($event, 'left')" nz-icon nzType="left" nzTheme="outline"></i>
+            <ul (mousemove)="onMouseMove($event)" (mousedown)="onMouseDown($event)" (scroll)="infiniteScroll($event)"
+              (mouseup)="onMouseup($event)" class="carousel">
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+              <li class="card">
+                <h2>Shadman Waris</h2>
+                <span>Sales Manager</span>
+              </li>
+            </ul>
+            <i (click)="arrowButton($event, 'right')" nz-icon nzType="right" nzTheme="outline"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nz-content>
 </nz-layout>

@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Gotham";
+  src: url("../../../assets/fonts/GothamBook.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../../../assets/fonts/GothamBlack.otf");
+}
+
 body {
   font-size: 16px;
+  font-family: "Gotham";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

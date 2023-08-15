@@ -101,6 +101,13 @@ nz-footer {
   line-height: 3.5rem;
 }
 
+.section-title {
+  font-family: "Gotham Bold";
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 50px 0px 40px;
+}
+
 .section-two-card-leftcontainer {
   border: 1px solid;
   margin-right: 25px;
@@ -117,7 +124,7 @@ nz-footer {
 .section-two-card-rightcontent {
   position: absolute;
   font-family: "Gotham Bold";
-  right: 5%;
+  right: 50px;
   top: 40%;
   text-align: right;
   width: 34%;
@@ -128,8 +135,8 @@ nz-footer {
 .section-two-card-leftcontent {
   position: absolute;
   font-family: "Gotham Bold";
-  left: 5%;
-  top: 40%;
+  left: 50px;
+  bottom: 50px;
   text-align: left;
   width: 34%;
   font-size: 1.75rem;
@@ -140,6 +147,14 @@ nz-footer {
   max-width: 2400px;
   width: 100%;
   position: relative;
+}
+
+.section-third-card-content {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: "Gotham Bold";
+  line-height: 3.5rem;
 }
 
 .section-third-card-wrapper i {
@@ -211,6 +226,152 @@ nz-footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.section-fourth-card-wrapper {
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  height: 500px;
+}
+
+.section-fourth-card-container {
+  border: 1px solid;
+  height: 100%;
+  position: relative;
+}
+
+.section-fourth-card-content {
+  position: absolute;
+  font-family: "Gotham Bold";
+  left: 50px;
+  top: 40%;
+  text-align: left;
+  width: 34%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.section-fifth-card-wrapper {
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  height: 100vh;
+}
+
+.section-fifth-card-leftcontainer {
+  border: 1px solid;
+  margin-right: 25px;
+  height: 100%;
+  position: relative;
+}
+
+.section-fifth-card-rightcontainer {
+  border: 1px solid;
+  margin-left: 25px;
+  height: 100%;
+}
+
+.section-fifth-card-rightcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  left: 75px;
+  top: 40%;
+  width: 40%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  text-align: start;
+}
+
+.section-fifth-card-leftcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  right: 50px;
+  top: 40%;
+  width: 40%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  text-align: end;
+}
+
+.section-sixth-card-wrapper {
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  height: 100vh;
+}
+
+.section-sixth-card-leftcontainer {
+  border: 1px solid;
+  margin-right: 25px;
+  height: 100%;
+  position: relative;
+}
+
+.section-sixth-card-rightcontainer {
+  border: 1px solid;
+  margin-left: 25px;
+  height: 100%;
+}
+
+.section-sixth-card-rightcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  right: 50px;
+  top: 40%;
+  text-align: right;
+  width: 45%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.section-sixth-card-leftcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  left: 50px;
+  top: 40%;
+  text-align: left;
+  width: 34%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.section-seventh-card-wrapper {
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  height: 75vh;
+}
+
+.section-seventh-card-leftcontainer {
+  border: 1px solid;
+  margin-right: 25px;
+  height: 100%;
+  position: relative;
+}
+
+.section-seventh-card-rightcontainer {
+  border: 1px solid;
+  margin-left: 25px;
+  height: 100%;
+}
+
+.section-seventh-card-rightcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  left: 75px;
+  top: 40%;
+  width: 45%;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-align: start;
+}
+
+.section-seventh-card-leftcontent {
+  position: absolute;
+  font-family: "Gotham Bold";
+  right: 50px;
+  top: 40%;
+  width: 45%;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-align: end;
 }
 
 @media screen and (max-width: 900px) {

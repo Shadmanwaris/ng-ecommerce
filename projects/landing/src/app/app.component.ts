@@ -30,12 +30,15 @@ export class AppComponent {
   arrowButtons: any;
   firstCardWidth: any;
   carouselChildrens: any[] = [];
+  showMenu: boolean = false;
+  showMegaMenu: boolean = false;
 
   constructor () {
 
   }
   ngAfterContentInit() {
     this.carousel = document.querySelector(".carousel");
+
     this.arrowButtons = document.querySelector(".section-third-card-wrapper i");
     this.firstCardWidth = this.carousel.querySelector(".card").offsetWidth;
     this.carouselChildrens = [...this.carousel.children];
@@ -83,6 +86,16 @@ export class AppComponent {
       this.carousel.classList.remove("no-transition");
     }
   }
+
+  megaSubMenuMouseEnter(e: any, type: any) {
+    if (e) {
+      console.log(e);
+
+    }
+  }
+
+
+
 
 
 

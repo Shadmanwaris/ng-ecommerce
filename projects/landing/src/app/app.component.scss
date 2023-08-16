@@ -374,6 +374,170 @@ nz-footer {
   text-align: end;
 }
 
+.footer {
+  padding: 0;
+}
+
+.signup-footer {
+  background-color: #e31b23;
+  color: #ffffff;
+}
+
+.section-signup-card-wrapper {
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  height: 300px;
+}
+
+.section-signup-card-container {
+  height: 100%;
+  position: relative;
+}
+
+.section-signup-card-content {
+  position: absolute;
+  font-family: "Gotham Bold";
+  top: 25%;
+  width: 100%;
+  font-size: 1.75rem;
+  color: #ffffff;
+  line-height: 2.5rem;
+  text-align: start;
+}
+
+.footer-subscriber-leftcontent {
+  font-family: "Gotham";
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  left: 50px;
+}
+
+.footer-subscriber-leftcontent h1 {
+  font-family: "Gotham Bold";
+}
+
+.footer-subscriber-rightcontent {
+  font-family: "Gotham";
+  position: absolute;
+  width: 50%;
+  right: 50px;
+  text-align: end;
+}
+
+.navigation-footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 100px 400px;
+  text-align: start;
+}
+
+.navigation-footer-container {
+  position: relative;
+  width: 70%;
+}
+
+.navigation-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navigation-footer-container h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Gotham Bold";
+}
+
+.navigation-footer ul li {
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  font-family: "Gotham";
+  color: grey;
+  font-weight: 700;
+}
+
+.navigation-footer ul li:hover {
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar {
+  font-family: "Gotham Bold";
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  font-size: 0.85rem;
+}
+
+.navbar a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 15px;
+  color: #000;
+}
+
+.subnav {
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0px 15px;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  // background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+  padding: 2.5% 15%;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.subnav-content a {
+  float: left;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: none;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav-content-submenu {
+  line-height: 2rem;
+  font-family: "Gotham";
+  list-style: none;
+  padding: 0px;
+}
+
+.subnav-content h3 {
+  font-family: "Gotham Bold";
+  font-weight: 300;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
 @media screen and (max-width: 900px) {
   .section-third-card-wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);

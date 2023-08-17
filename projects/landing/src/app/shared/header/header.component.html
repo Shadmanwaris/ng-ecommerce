@@ -1,0 +1,406 @@
+<!-- <p>header works!</p> -->
+
+<nz-header>
+  <div class="logo">Sana Design</div>
+  <div class="search">
+    <div style="display: inline-flex; grid-gap: 20px">
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input nz-input placeholder="Search" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <span nz-icon nzType="search"></span>
+      </ng-template>
+      <span style="padding: 8px" nz-icon nzType="shopping-cart" (click)="open()" nzTheme="outline"></span>
+    </div>
+  </div>
+  <!-- <ul nz-menu nzMode="horizontal" class="header-menu">
+      <li nz-submenu nz-menu-item nzTitle="Sale" nzSelected>
+        <ul>
+          <li>
+            <ul>
+              <li nz-menu-item>Bags</li>
+              <li nz-menu-item>Kits</li>
+              <li nz-menu-item>Men's</li>
+              <li nz-menu-item>Women's</li>
+              <li nz-menu-item>Accessories</li>
+              <li nz-menu-item>All</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Packs & Bags" nz-menu-item>
+
+      </li>
+      <li nz-menu-item>Men's</li>
+      <li nz-menu-item>Women's</li>
+      <li nz-menu-item>Accessories</li>
+      <li nz-menu-item>The New Outdoor<sup>TM</sup></li>
+    </ul> -->
+  <div class="navbar">
+    <a href="#home">Sale</a>
+    <div class="subnav">
+      <button class="subnavbtn">Packs & Bags </button>
+      <div class="subnav-content">
+        <div nz-row>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Shop by style</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop all</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Shop by activity</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop new</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">bag accessories</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop sale</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Collections</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop gift cards</h3>
+          </div>
+          <div nz-col nzSpan="4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Men's </button>
+      <div class="subnav-content">
+        <div nz-row>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Apparel</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop all</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Outwear</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop new</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Accessories</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop sale</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Collections</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop gift cards</h3>
+          </div>
+          <div nz-col nzSpan="4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Women's </button>
+      <div class="subnav-content">
+        <div nz-row>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Apparel</h3>
+            <ul class="subnav-content-submenu">
+              <li>Shirt</li>
+              <li>Tshirt & Tank Tops</li>
+              <li>Hoodies & Crew</li>
+              <li>Wool</li>
+              <li>Pants & Jumpsuit</li>
+              <li>Shorts</li>
+            </ul>
+            <h3 style="color: #000;">Shop all</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Outwear</h3>
+            <ul class="subnav-content-submenu">
+              <li>Puffer & Insulated</li>
+              <li>Fleece</li>
+              <li>Shirt Jackets</li>
+              <li>Rain</li>
+            </ul>
+            <h3 style="color: #000;">Shop new</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">accessories</h3>
+            <ul class="subnav-content-submenu">
+              <li>Hat & Beanies</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop sale</h3>
+          </div>
+          <div nz-col nzSpan="4">
+            <h3 style="color: #000;">Collections</h3>
+            <ul class="subnav-content-submenu">
+              <li>New</li>
+              <li>Packs & Bags</li>
+              <li>Men's Apparel</li>
+              <li>Women's Apparal</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+              <li>After Pay</li>
+            </ul>
+            <h3 style="color: #000;">Shop gift cards</h3>
+          </div>
+          <div nz-col nzSpan="4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Accessories </button>
+      <div class="subnav-content">
+        <div nz-row>
+          <div nz-col nzSpan="8">
+            <h3 style="color: #000;">Bag Accessories</h3>
+            <ul class="subnav-content-submenu">
+              <li>Accessory Bags</li>
+              <li>Dopp Kits</li>
+              <li>Pack Bag</li>
+              <li>Bag Organisation</li>
+              <li>Bike Accessories</li>
+              <li>Water Bottle & Tumblers</li>
+              <li>Straps & Clips</li>
+            </ul>
+
+          </div>
+          <div nz-col nzSpan="8">
+            <h3 style="color: #000;">Apparel accessories</h3>
+            <ul class="subnav-content-submenu">
+              <li>Hats and Beanies</li>
+              <li>Gaiters & Bandanas</li>
+              <li>Belts& Wallets</li>
+              <li>Shoes & Socks</li>
+              <li>GIft Cards</li>
+            </ul>
+
+          </div>
+          <div nz-col nzSpan="4"></div>
+        </div>
+        <div nz-row>
+          <div nz-col nzSpan="8">
+            <h3 style="color: #000;">Shop all</h3>
+          </div>
+          <div nz-col nzSpan="8">
+            <h3 style="color: #000;">Shop new</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#contact">The New Outdoor <sup>TM</sup></a>
+  </div>
+</nz-header>
+
+<nz-drawer [nzClosable]="false" [nzSize]="size" [nzVisible]="visible" nzPlacement="right" (nzOnClose)="close()">
+  <ng-container *nzDrawerContent>
+    <div class="drawer-container">
+      <h1>Your Cart</h1>
+      <div class="drawer-info">
+        <span>Create an account and spend $250 per rolling year to become a VIP and earn 2 points per $1 spent, Free
+          U.S.
+          Shipping &
+          Returns, and more. <br>
+          <a>Sign In</a> or <a>Create Account</a>
+        </span>
+      </div>
+      <div class="drawer-content">
+        <div nz-row class="single-item">
+          <div nz-col nzSpan="4">
+            <div style="width: 100%; height: 100%; border: 1px solid;">
+
+            </div>
+          </div>
+          <div nz-col nzSpan="16">
+            <div class="cart-item-info">
+              <h6>Session Pack</h6>
+              <span>Olive / Navy</span>
+              <p>Kit Bundle Applied</p>
+              <nz-input-number [nzPrecision]="precision" nzPlaceHolder="toFixed"></nz-input-number>
+            </div>
+
+          </div>
+          <div class="deleteIcon" nz-col nzSpan="4">
+            <span nz-icon nzType="delete" nzTheme="outline"></span>
+            <div class="contentprice">
+              <span class="totalprice">$195</span>&nbsp; <span class="discountedprice">$312.00</span>
+            </div>
+          </div>
+        </div>
+        <div nz-row class="single-item">
+          <div nz-col nzSpan="4">
+            <div style="width: 100%; height: 100%; border: 1px solid;">
+
+            </div>
+          </div>
+          <div nz-col nzSpan="16">
+            <div class="cart-item-info">
+              <h6>Session Pack</h6>
+              <span>Olive / Navy</span>
+              <p>Kit Bundle Applied</p>
+              <nz-input-number [nzPrecision]="precision" nzPlaceHolder="toFixed"></nz-input-number>
+            </div>
+
+          </div>
+          <div class="deleteIcon" nz-col nzSpan="4">
+            <span nz-icon nzType="delete" nzTheme="outline"></span>
+            <div class="contentprice">
+              <span class="totalprice">$195</span>&nbsp; <span class="discountedprice">$312.00</span>
+            </div>
+          </div>
+        </div>
+        <div nz-row class="single-item">
+          <div nz-col nzSpan="4">
+            <div style="width: 100%; height: 100%; border: 1px solid;">
+
+            </div>
+          </div>
+          <div nz-col nzSpan="16">
+            <div class="cart-item-info">
+              <h6>Session Pack</h6>
+              <span>Olive / Navy</span>
+              <p>Kit Bundle Applied</p>
+              <nz-input-number [nzPrecision]="precision" nzPlaceHolder="toFixed"></nz-input-number>
+            </div>
+
+          </div>
+          <div class="deleteIcon" nz-col nzSpan="4">
+            <span nz-icon nzType="delete" nzTheme="outline"></span>
+            <div class="contentprice">
+              <span class="totalprice">$195</span>&nbsp; <span class="discountedprice">$312.00</span>
+            </div>
+          </div>
+        </div>
+        <div nz-row class="single-item">
+          <div nz-col nzSpan="4">
+            <div style="width: 100%; height: 100%; border: 1px solid;">
+
+            </div>
+          </div>
+          <div nz-col nzSpan="16">
+            <div class="cart-item-info">
+              <h6>Session Pack</h6>
+              <span>Olive / Navy</span>
+              <p>Kit Bundle Applied</p>
+              <nz-input-number [nzPrecision]="precision" nzPlaceHolder="toFixed"></nz-input-number>
+            </div>
+
+          </div>
+          <div class="deleteIcon" nz-col nzSpan="4">
+            <span nz-icon nzType="delete" nzTheme="outline"></span>
+            <div class="contentprice">
+              <span class="totalprice">$195</span>&nbsp; <span class="discountedprice">$312.00</span>
+            </div>
+          </div>
+        </div>
+        <div nz-row class="single-item">
+          <div nz-col nzSpan="4">
+            <div style="width: 100%; height: 100%; border: 1px solid;">
+
+            </div>
+          </div>
+          <div nz-col nzSpan="16">
+            <div class="cart-item-info">
+              <h6>Session Pack</h6>
+              <span>Olive / Navy</span>
+              <p>Kit Bundle Applied</p>
+              <nz-input-number [nzPrecision]="precision" nzPlaceHolder="toFixed"></nz-input-number>
+            </div>
+
+          </div>
+          <div class="deleteIcon" nz-col nzSpan="4">
+            <span nz-icon nzType="delete" nzTheme="outline"></span>
+            <div class="contentprice">
+              <span class="totalprice">$195</span>&nbsp; <span class="discountedprice">$312.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-button">
+        <div nz-row>
+          <div nz-col nzSpan="12">
+            <h5>Subtotal(3 Items)</h5>
+          </div>
+          <div nz-col nzSpan="12">
+            <h5 class="totalprice">$195 <span class="discountedprice">$312.00</span></h5>
+
+          </div>
+        </div>
+        <div nz-row>
+          <div nz-col nzSpan="24">
+            <button (click)="checkout()" style="margin-top: 15px;" nz-button nzType="primary" nzBlock><span nz-icon
+                nzType="lock" nzTheme="outline"></span> Checkout</button>
+            <button (click)="continueShopping()" style="margin-top: 15px;" nzGhost nz-button nzType="primary"
+              nzBlock>Continue Shopping</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</nz-drawer>

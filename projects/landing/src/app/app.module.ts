@@ -10,12 +10,13 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { VendorsModule } from 'projects/vendors/src/lib/vendors.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +25,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     VendorsModule,
+    SharedModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

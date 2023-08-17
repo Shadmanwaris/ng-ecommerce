@@ -1,0 +1,87 @@
+<!-- <p>collections works!</p> -->
+<div nz-row>
+  <div nz-col nzSpan="6">
+    <div style="border: 1px solid;width: 100%;">
+      <nz-collapse nzGhost>
+        <nz-collapse-panel class="collection-filter-header" *ngFor="let panel of panels" [nzHeader]="panel.name"
+          [nzActive]="panel.active" [nzDisabled]="panel.disabled">
+          <div *ngIf="panel.id == 1" style="margin:0;">
+            <ul class="collection-product-type">
+              <li>
+                <a>Bags</a>
+              </li>
+              <li>
+                <a>Wallets</a>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="panel.id == 2" style="margin:0;">
+            <ul class="collection-checkbox-category">
+              <li>
+                <label nz-checkbox>Global</label>
+              </li>
+              <li>
+                <label nz-checkbox>Mountain</label>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="panel.id == 3" style="margin:0;">
+            <ul class="collection-checkbox-category">
+              <li>
+                <label nz-checkbox>X-Small</label>
+              </li>
+              <li>
+                <label nz-checkbox>Small</label>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="panel.id == 4" style="margin:0;">
+            <ul class="collection-checkbox-category">
+              <li>
+                <label nz-checkbox>$25 - $50</label>
+              </li>
+              <li>
+                <label nz-checkbox>$50 - $75</label>
+              </li>
+            </ul>
+          </div>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div nz-col nzSpan="18">
+    <div style="border: 1px solid;width: 100%; padding: 25px;">
+      <div nz-row>
+        <div nz-col nzSpan="12">
+          <nz-breadcrumb style="font-size: 0.75rem;">
+            <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+            <nz-breadcrumb-item>
+              <a>Application List</a>
+            </nz-breadcrumb-item>
+            <nz-breadcrumb-item>An Application</nz-breadcrumb-item>
+          </nz-breadcrumb>
+        </div>
+        <div nz-col nzSpan="12" style="text-align: end;">
+
+          <span>Select 5 results &nbsp;</span>
+          <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person">
+            <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+            <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+            <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+          </nz-select>
+        </div>
+      </div>
+      <div nz-row style="margin-top: 25px;">
+        <div nz-col nzSpan="24">
+          <div class="category-container">
+            <div class="category-item"></div>
+            <div class="category-item"></div>
+            <div class="category-item"></div>
+            <div class="category-item"></div>
+            <div class="category-item"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

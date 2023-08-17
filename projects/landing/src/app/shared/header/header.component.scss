@@ -1,0 +1,55 @@
+.ant-layout-header {
+  background-color: #ffffff;
+}
+
+.header-menu li {
+  font-weight: bold;
+}
+
+.header-banner {
+  background-color: #e31b23;
+  padding: 10px 0px;
+  font-size: 0.85rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.logo {
+  width: 5%;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 14px 14px 14px 0;
+  float: left;
+}
+
+.search {
+  width: 15%;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  float: right;
+}
+
+nz-header {
+  position: absolute;
+  width: 100%;
+}
+
+[nz-menu] {
+  line-height: 64px;
+}
+
+nz-content {
+  margin-top: 64px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
